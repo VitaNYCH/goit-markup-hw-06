@@ -528,20 +528,42 @@ textarea{
 
     margin-bottom: 10px;
 }
+.checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+.form-check-icon{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 4px;
+}
+.checkbox:checked + .form-check-icon{
+    border-color: var(--bcground-accent-color);
+    background-color: var(--bcground-accent-color);
+    background-image: url("/images/vector\ .svg");
+    background-size: contain;
+    background-origin:border-box;
+}
+
 .form-check{
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     padding: 0;
-}
-.form-check label{
     margin-left: 8px;
-    color: rgba(117, 117, 117, 1);
-}
-.form-check input {
-   width: 16px;
-   height: 15px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #757575; 
 }
 .form-input{
 
