@@ -356,6 +356,32 @@
                         <use href="./images/symbol-defs.svg#icon-close-black"></use>
                     </svg>
                 </button>
+                <h2 class="form-titel">Залиште свої дані, ми вам передзвонимо</h2>
+                <form class="form" action="javascript:void(0);">
+                    <ul class=" form-list list">
+                        <li  class="form-field">
+                            <label for="name">Ім'я</label>
+                            <input type="name" name="Username" id="name" />
+                        </li>
+                        <li class="form-field">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel" />
+                       </li>
+                        <li class="form-field">
+                            <label for="email">Пошта</label>
+                            <input type="email" name="email" id="email" />
+                        </li>
+                        <li class="form-field">
+                            <label for="comment">Коментар</label>
+                            <textarea name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+                        </li>
+                    </ul>
+                    <p class="form-check">
+                        <input type="checkbox" name="approval" value="approval" id="approval" />
+                        <label for="approval">Погоджуюся з розсилкою та приймаю <a href="" class="form-link">Умови договору</a></label>
+                    </p>
+                    <button class="btn-submit" type="submit">Відправити</button>
+                </form>
             </div>
         </div>
     </main>
@@ -413,8 +439,21 @@
                     </li>
                 </ul>
             </div>
+            <form class="form-footer">
+                <p class="form-footer-name">Підпишіться на розсилку</p>
+                <div class="subscribe">
+                <input type="email" name="mail" id="mail"/>
+                <label for="mail">Email</label>
+                <button type="button" class="form-btn-footer">Підписатися 
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="/images/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+                </div>
+            </form>
             </div>
         </div>
+       
     </footer>
     <script src="./js/modal.js"></script>
 </body>
