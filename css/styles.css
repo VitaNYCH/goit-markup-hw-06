@@ -292,13 +292,13 @@ margin-right: 30px;
 }
 .example-item{
     display: flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
     margin:0;
     padding:0;
     width: 370px;
     height: 70px;
-    position: absolute;
     bottom:0;
     right:0;
 
@@ -502,7 +502,8 @@ textarea{
     padding: 10px 52px;
     border-radius: 4px;
     border: none;
-
+    
+    cursor: pointer;
     color:var(--primary-white-color);
     background: var(--bcground-accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -526,7 +527,6 @@ textarea{
     flex-direction: column;
 
     margin-bottom: 10px;
-    border-radius: 4px;
 }
 .form-check{
     display: flex;
@@ -542,6 +542,18 @@ textarea{
 .form-check input {
    width: 16px;
    height: 15px;
+}
+.form-input{
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.form-input:focus{
+    outline: 1px solid #2196F3;
+    cursor: pointer;
+}
+.form-input:focus+.form-field-element{
+color: var(--accent-color);
 }
 .form-field label{
     margin-bottom: 4px;
@@ -731,6 +743,7 @@ textarea{
     border-radius: 4px;
     border: none;
 
+    cursor: pointer;
     color: var(--primary-white-color);
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
